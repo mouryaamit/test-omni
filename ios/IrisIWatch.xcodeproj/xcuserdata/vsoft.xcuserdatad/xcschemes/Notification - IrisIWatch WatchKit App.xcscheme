@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0640"
+   version = "2.0">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "185DFDE91B7CE64800328905"
+               BuildableName = "IrisIWatch WatchKit App.app"
+               BlueprintName = "IrisIWatch WatchKit App"
+               ReferencedContainer = "container:IrisIWatch.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "185DFDDE1B7CE64800328905"
+               BuildableName = "IrisIWatch WatchKit Extension.appex"
+               BlueprintName = "IrisIWatch WatchKit Extension"
+               ReferencedContainer = "container:IrisIWatch.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
+               BuildableName = "IrisIWatch.app"
+               BlueprintName = "IrisIWatch"
+               ReferencedContainer = "container:IrisIWatch.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "185DFDE91B7CE64800328905"
+            BuildableName = "IrisIWatch WatchKit App.app"
+            BlueprintName = "IrisIWatch WatchKit App"
+            ReferencedContainer = "container:IrisIWatch.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES"
+      launchAutomaticallySubstyle = "8">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/IrisIWatch">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "185DFDE91B7CE64800328905"
+            BuildableName = "IrisIWatch WatchKit App.app"
+            BlueprintName = "IrisIWatch WatchKit App"
+            ReferencedContainer = "container:IrisIWatch.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "185DFDE91B7CE64800328905"
+            BuildableName = "IrisIWatch WatchKit App.app"
+            BlueprintName = "IrisIWatch WatchKit App"
+            ReferencedContainer = "container:IrisIWatch.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES"
+      launchAutomaticallySubstyle = "8">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/IrisIWatch">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "185DFDE91B7CE64800328905"
+            BuildableName = "IrisIWatch WatchKit App.app"
+            BlueprintName = "IrisIWatch WatchKit App"
+            ReferencedContainer = "container:IrisIWatch.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "185DFDE91B7CE64800328905"
+            BuildableName = "IrisIWatch WatchKit App.app"
+            BlueprintName = "IrisIWatch WatchKit App"
+            ReferencedContainer = "container:IrisIWatch.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

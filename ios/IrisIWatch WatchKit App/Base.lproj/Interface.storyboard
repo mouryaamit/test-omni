@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="1" height="104" alignment="left" text="Please login to IRIS App" textAlignment="center" numberOfLines="3" id="X0l-TO-zvg">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="16"/>
+                        </label>
+                        <button width="1" alignment="left" title="Check" id="08D-iD-4u3">
+                            <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="getAccData" destination="AgC-eL-Hgc" id="KAh-g0-BiZ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="recieveLabel" destination="X0l-TO-zvg" id="qLM-J9-VLE"/>
+                        <outlet property="sendButton" destination="08D-iD-4u3" id="XaQ-nu-sD3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-40" y="177"/>
+        </scene>
+        <!--HomeInterface-->
+        <scene sceneID="5yY-Hp-xs3">
+            <objects>
+                <controller identifier="HomeInterface" id="yJC-w7-3xn" customClass="HomeInterface">
+                    <items>
+                        <label width="1" alignment="left" text="Product Name" textAlignment="center" numberOfLines="2" id="ssD-qM-cMD">
+                            <color key="textColor" red="0.3534937111" green="1" blue="0.85326252359999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="18"/>
+                        </label>
+                        <separator alignment="left" id="2k5-w4-MWB">
+                            <color key="color" red="0.67248658459999999" green="0.60406991519999997" blue="0.65588654950000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label width="0.99999999999999989" alignment="left" text="Acc Name" textAlignment="left" numberOfLines="2" id="hav-6c-AK3">
+                            <color key="textColor" red="0.67248658459999999" green="0.67248658459999999" blue="0.67248658459999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="16"/>
+                        </label>
+                        <label width="0.99999999999999989" alignment="left" text="****564759" textAlignment="left" numberOfLines="2" id="7iu-6V-2ky">
+                            <color key="textColor" red="0.67248658459999999" green="0.67248658459999999" blue="0.67248658459999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <separator alignment="left" id="bqB-St-9TV">
+                            <color key="color" red="0.67248658459999999" green="0.60406991519999997" blue="0.65588654950000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label width="1" alignment="left" text="Available Balance" textAlignment="left" id="XmW-fW-Eff">
+                            <color key="textColor" red="0.71730696770000002" green="1" blue="0.80523384200000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <label width="1" alignment="left" text="15,987.23" textAlignment="left" numberOfLines="2" id="xID-nb-H48">
+                            <color key="textColor" red="0.25796746139999999" green="1" blue="0.11097145160000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="light" pointSize="30"/>
+                        </label>
+                        <separator alignment="left" alpha="0.0" id="Z7S-3L-cfb">
+                            <color key="color" red="0.67248658459999999" green="0.60406991519999997" blue="0.65588654950000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <table alignment="left" id="xqL-Vd-rOY">
+                            <items>
+                                <tableRow identifier="AccTransactionCreditRow" id="PKG-70-wfq" customClass="AccTransactionCreditRow">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="5KQ-RZ-LjQ">
+                                        <items>
+                                            <label width="1" alignment="left" text="+564.24" textAlignment="left" id="bep-d9-KIG">
+                                                <color key="textColor" red="0.25796746139999999" green="1" blue="0.11097145160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" type="system" weight="light" pointSize="20"/>
+                                            </label>
+                                            <label width="1" alignment="left" text="02/15 13:33" textAlignment="left" id="WKF-S0-H2z"/>
+                                            <label width="1" alignment="left" text="VSOFT Corporation" textAlignment="left" id="OxZ-9U-hol"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.1961508042139179" green="0.38860064985776188" blue="0.0037009585700739094" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="amt" destination="bep-d9-KIG" id="xKp-RM-igG"/>
+                                        <outlet property="dateTime" destination="WKF-S0-H2z" id="Ifw-G5-VUV"/>
+                                        <outlet property="trans" destination="OxZ-9U-hol" id="3FQ-I9-hT8"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="AccTransactionDebitRow" id="ciD-rS-6MR" customClass="AccTransactionDebitRow">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="Y7D-G1-uZn">
+                                        <items>
+                                            <label width="1" alignment="left" text="-564.24" textAlignment="left" id="bMm-Gk-bmC">
+                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" type="system" weight="light" pointSize="20"/>
+                                            </label>
+                                            <label width="1" alignment="left" text="02/15 13:33" textAlignment="left" id="Ayf-uk-xP4"/>
+                                            <label width="1" alignment="left" text="VSOFT Corporation" textAlignment="left" id="0Li-Sj-awy"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.39309875591836796" green="0.0" blue="0.036330955588104209" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="amt" destination="bMm-Gk-bmC" id="Vw9-SW-nJB"/>
+                                        <outlet property="dateTime" destination="Ayf-uk-xP4" id="PgL-lE-7s6"/>
+                                        <outlet property="trans" destination="0Li-Sj-awy" id="DJY-hL-a8W"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="accName" destination="hav-6c-AK3" id="XrV-pS-RiB"/>
+                        <outlet property="accNo" destination="7iu-6V-2ky" id="s0n-sm-jae"/>
+                        <outlet property="accTransactionTable" destination="xqL-Vd-rOY" id="8uk-3z-gx7"/>
+                        <outlet property="availBal" destination="xID-nb-H48" id="mju-vM-mDf"/>
+                        <outlet property="prodName" destination="ssD-qM-cMD" id="r5o-D6-DCr"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="168" y="251.25"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="tNq-V8-UYY">
+            <objects>
+                <glanceController id="I28-Sa-OCu" customClass="GlanceController">
+                    <items>
+                        <group alignment="left" layout="vertical" id="A1j-4t-FKE">
+                            <items>
+                                <imageView alignment="left" image="GlanceHeader" id="dhO-eP-eu9"/>
+                                <label width="1" alignment="left" text="My Salary Account" id="Bq0-Gm-hKa">
+                                    <color key="textColor" red="0.7694326073272727" green="0.7694326073272727" blue="0.7694326073272727" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label width="1" alignment="left" text="15,987.23" id="alf-PB-b3m">
+                                    <color key="textColor" red="0.25796746139999999" green="1" blue="0.11097145160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="light" pointSize="17"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" id="4ln-sZ-Vq6">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" id="C4K-0I-tY3">
+                                    <items>
+                                        <separator alignment="left" id="no1-qi-b2v">
+                                            <color key="color" red="0.67248658459999999" green="0.67248658459999999" blue="0.67248658459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </separator>
+                                        <label width="1" alignment="left" text="Recent Transactions" id="3TZ-yQ-r4x">
+                                            <color key="textColor" red="0.70653681660000001" green="0.93711039880000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
+                                        </label>
+                                        <group width="1" alignment="left" id="Lql-E8-HLx">
+                                            <items>
+                                                <label width="0.5" height="20" alignment="left" verticalAlignment="center" text="6/19 3:36 |" id="lO2-4D-440">
+                                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                                </label>
+                                                <label width="0.5" alignment="left" verticalAlignment="center" text="-8,896.23" id="oIj-oP-SyB">
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="font" type="boldSystem" pointSize="13"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="uXv-YJ-rqA">
+                                    <color key="color" red="0.67248658459999999" green="0.67248658459999999" blue="0.67248658459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" alignment="left" layout="vertical" id="VDr-RC-CJ3">
+                                    <items>
+                                        <label alignment="left" text="Car Loan Account" id="yGN-sD-ipK">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                        </label>
+                                        <label alignment="left" text="Outstanding Amount" id="sII-Qr-qr7">
+                                            <color key="textColor" red="0.70653681660000001" green="0.93711039880000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                        </label>
+                                        <label alignment="left" text="14,000.00" id="EVf-Wo-TgG">
+                                            <color key="textColor" red="0.7694326073272727" green="0.56241730495454167" blue="0.28711008920297926" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="-40" y="592"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="t6J-K5-V20">
+            <objects>
+                <notificationController id="KGX-tW-7Kw">
+                    <items>
+                        <label alignment="left" text="Account Update" id="8kN-jd-Ooq">
+                            <fontDescription key="font" type="boldSystem" pointSize="17"/>
+                        </label>
+                        <label alignment="left" text="Date : 06/19/2015" id="rzS-fA-KnY">
+                            <color key="textColor" red="0.76943260729999996" green="0.76943260729999996" blue="0.76943260729999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <label alignment="left" text="Account : ****5642" id="ogt-xV-oe5">
+                            <color key="textColor" red="0.76943260729999996" green="0.76943260729999996" blue="0.76943260729999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <label alignment="left" text="Debit : $77.00" id="zSs-lH-fs5">
+                            <color key="textColor" red="0.76943260729999996" green="0.76943260729999996" blue="0.76943260729999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="NIf-df-aJM"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="8kN-jd-Ooq" id="1pT-1b-adO"/>
+                        <segue destination="ncx-1b-POl" kind="relationship" relationship="dynamicNotificationInterface" id="kMz-al-Gbd"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="211" y="599"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="E0l-FU-zhS">
+            <objects>
+                <controller id="ncx-1b-POl" customClass="NotificationController">
+                    <items>
+                        <label alignment="left" text="Account Update" id="0LL-7w-AZ2">
+                            <fontDescription key="font" type="boldSystem" pointSize="17"/>
+                        </label>
+                        <label alignment="left" text="Date : 06/19/2015" id="cJm-jz-6e5">
+                            <color key="textColor" red="0.76943260729999996" green="0.76943260729999996" blue="0.76943260729999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <label alignment="left" text="Account : ****5642" id="9eX-8F-Lkz">
+                            <color key="textColor" red="0.76943260729999996" green="0.76943260729999996" blue="0.76943260729999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <label alignment="left" text="Debit : $77.00" id="CIr-uM-NDk">
+                            <color key="textColor" red="0.76943260729999996" green="0.76943260729999996" blue="0.76943260729999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="423" y="599"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,1093 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		184969BD1B7DEF6000303EB7 /* HomeInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 184969BC1B7DEF6000303EB7 /* HomeInterface.m */; };
+		1854D3BF1B821BB800E761B4 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1854D3BB1B821BB800E761B4 /* Icon-40@3x.png */; };
+		1854D3C01B821BB800E761B4 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1854D3BC1B821BB800E761B4 /* Icon-Small-50.png */; };
+		1854D3C11B821BB800E761B4 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1854D3BD1B821BB800E761B4 /* Icon-Small-50@2x.png */; };
+		1854D3C21B821BB800E761B4 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1854D3BE1B821BB800E761B4 /* Icon-Small@3x.png */; };
+		1854D3D01B821DE200E761B4 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1854D3C61B821DE200E761B4 /* Default-Landscape@2x.png */; };
+		185DFDE51B7CE64800328905 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185DFDE41B7CE64800328905 /* InterfaceController.m */; };
+		185DFDE71B7CE64800328905 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185DFDE61B7CE64800328905 /* Images.xcassets */; };
+		185DFDEB1B7CE64800328905 /* IrisIWatch WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 185DFDEA1B7CE64800328905 /* IrisIWatch WatchKit App.app */; };
+		185DFDF31B7CE64800328905 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185DFDF11B7CE64800328905 /* Interface.storyboard */; };
+		185DFDF51B7CE64800328905 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185DFDF41B7CE64800328905 /* Images.xcassets */; };
+		185DFDF81B7CE64800328905 /* IrisIWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 185DFDDF1B7CE64800328905 /* IrisIWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		185DFE001B7CE6D200328905 /* libmmwormhole.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F77ED776E67C47FB9C75FC7C /* libmmwormhole.a */; };
+		18668A881B8486C6002EE4D7 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18668A841B8486C6002EE4D7 /* GlanceController.m */; };
+		18668A891B8486C6002EE4D7 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18668A871B8486C6002EE4D7 /* NotificationController.m */; };
+		187BBDAE1B8367CF00658F04 /* AccTransactionDebitRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BBDAD1B8367CF00658F04 /* AccTransactionDebitRow.m */; };
+		187BBDB91B837AB300658F04 /* Default-667h.png in Resources */ = {isa = PBXBuildFile; fileRef = 187BBDB01B837AB300658F04 /* Default-667h.png */; };
+		187BBDBA1B837AB300658F04 /* Default-736h.png in Resources */ = {isa = PBXBuildFile; fileRef = 187BBDB11B837AB300658F04 /* Default-736h.png */; };
+		187BBDBB1B837AB300658F04 /* Default-Landscape-736h.png in Resources */ = {isa = PBXBuildFile; fileRef = 187BBDB21B837AB300658F04 /* Default-Landscape-736h.png */; };
+		187BBDBC1B837AB300658F04 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 187BBDB31B837AB300658F04 /* Default-Landscape~ipad.png */; };
+		187BBDBD1B837AB300658F04 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 187BBDB41B837AB300658F04 /* Default-Portrait@2x~ipad.png */; };
+		187BBDBE1B837AB300658F04 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 187BBDB51B837AB300658F04 /* Default-Portrait~ipad.png */; };
+		187BBDBF1B837AB300658F04 /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 187BBDB61B837AB300658F04 /* Default-568h@2x~iphone.png */; };
+		187BBDC01B837AB300658F04 /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 187BBDB71B837AB300658F04 /* Default@2x~iphone.png */; };
+		187BBDC11B837AB300658F04 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 187BBDB81B837AB300658F04 /* Default~iphone.png */; };
+		187BBDC31B837B7900658F04 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 187BBDC21B837B7900658F04 /* Default-568h@2x.png */; };
+		187BBDC51B837CF200658F04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187BBDC41B837CF200658F04 /* Images.xcassets */; };
+		18EA2E071B81D21A00C740E0 /* AccTransactionCreditRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA2E061B81D21A00C740E0 /* AccTransactionCreditRow.m */; };
+		18EA2E0D1B81F5F800C740E0 /* SBJSON in Resources */ = {isa = PBXBuildFile; fileRef = 18EA2E0C1B81F5F800C740E0 /* SBJSON */; };
+		18EA2E1E1B81FC8000C740E0 /* SBJson4Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA2E111B81FC8000C740E0 /* SBJson4Parser.m */; };
+		18EA2E1F1B81FC8000C740E0 /* SBJson4StreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA2E131B81FC8000C740E0 /* SBJson4StreamParser.m */; };
+		18EA2E201B81FC8000C740E0 /* SBJson4StreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA2E151B81FC8000C740E0 /* SBJson4StreamParserState.m */; };
+		18EA2E211B81FC8000C740E0 /* SBJson4StreamTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA2E171B81FC8000C740E0 /* SBJson4StreamTokeniser.m */; };
+		18EA2E221B81FC8000C740E0 /* SBJson4StreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA2E191B81FC8000C740E0 /* SBJson4StreamWriter.m */; };
+		18EA2E231B81FC8000C740E0 /* SBJson4StreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA2E1B1B81FC8000C740E0 /* SBJson4StreamWriterState.m */; };
+		18EA2E241B81FC8000C740E0 /* SBJson4Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA2E1D1B81FC8000C740E0 /* SBJson4Writer.m */; };
+		19D0F251D77B47A69B1C3CA0 /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E20F5B880F945F5A7B0EEDF /* CDVReachability.m */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */; };
+		308D05371370CCF300D202BF /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D052E1370CCF300D202BF /* icon-72.png */; };
+		308D05381370CCF300D202BF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D052F1370CCF300D202BF /* icon.png */; };
+		308D05391370CCF300D202BF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D05301370CCF300D202BF /* icon@2x.png */; };
+		30C1856619D5FC0A00212699 /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C1856519D5FC0A00212699 /* icon-60@3x.png */; };
+		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
+		3A8A7520906B447D85791B59 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF547B4931B94560A9D2C4D0 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
+		76FB38D0D7F94451A092AB33 /* CDVConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9096100F38804AECAA780512 /* CDVConnection.m */; };
+		7E7966DE1810823500FA85AD /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D41810823500FA85AD /* icon-40.png */; };
+		7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D51810823500FA85AD /* icon-40@2x.png */; };
+		7E7966E31810823500FA85AD /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D91810823500FA85AD /* icon-60@2x.png */; };
+		7E7966E41810823500FA85AD /* icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DA1810823500FA85AD /* icon-76.png */; };
+		7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DB1810823500FA85AD /* icon-76@2x.png */; };
+		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
+		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
+		90F2A7FD5ADA4782A1D50589 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB43C9D8EDFC471F9A1386C2 /* Foundation.framework */; };
+		A3421141DA5044879DBC94AC /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF2B078F91B42D3B532B07D /* CDVLogger.m */; };
+		BB5C533201C54839A6DF6F7B /* AppleWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FFE1B05D4A2396A0AA86 /* AppleWatch.m */; };
+		E156216012C7450AA586F986 /* libmmwormhole.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F77ED776E67C47FB9C75FC7C /* libmmwormhole.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		185DFDEC1B7CE64800328905 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185DFDE91B7CE64800328905;
+			remoteInfo = "IrisIWatch WatchKit App";
+		};
+		185DFDF61B7CE64800328905 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185DFDDE1B7CE64800328905;
+			remoteInfo = "IrisIWatch WatchKit Extension";
+		};
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		185DFDFF1B7CE64900328905 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				185DFDF81B7CE64800328905 /* IrisIWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		184969B91B7DC95300303EB7 /* IrisIWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = IrisIWatch.entitlements; path = IrisIWatch/IrisIWatch.entitlements; sourceTree = "<group>"; };
+		184969BA1B7DC96700303EB7 /* IrisIWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "IrisIWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		184969BB1B7DEF4B00303EB7 /* HomeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeInterface.h; sourceTree = "<group>"; };
+		184969BC1B7DEF6000303EB7 /* HomeInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeInterface.m; sourceTree = "<group>"; };
+		1854D3BB1B821BB800E761B4 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		1854D3BC1B821BB800E761B4 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		1854D3BD1B821BB800E761B4 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		1854D3BE1B821BB800E761B4 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		1854D3C61B821DE200E761B4 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		185DFDDF1B7CE64800328905 /* IrisIWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "IrisIWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		185DFDE21B7CE64800328905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185DFDE31B7CE64800328905 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		185DFDE41B7CE64800328905 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		185DFDE61B7CE64800328905 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		185DFDEA1B7CE64800328905 /* IrisIWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IrisIWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		185DFDF01B7CE64800328905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185DFDF21B7CE64800328905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		185DFDF41B7CE64800328905 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18668A841B8486C6002EE4D7 /* GlanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		18668A851B8486C6002EE4D7 /* GlanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		18668A861B8486C6002EE4D7 /* NotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		18668A871B8486C6002EE4D7 /* NotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		187BBDAD1B8367CF00658F04 /* AccTransactionDebitRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccTransactionDebitRow.m; sourceTree = "<group>"; };
+		187BBDAF1B8367E300658F04 /* AccTransactionDebitRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccTransactionDebitRow.h; sourceTree = "<group>"; };
+		187BBDB01B837AB300658F04 /* Default-667h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h.png"; sourceTree = "<group>"; };
+		187BBDB11B837AB300658F04 /* Default-736h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h.png"; sourceTree = "<group>"; };
+		187BBDB21B837AB300658F04 /* Default-Landscape-736h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape-736h.png"; sourceTree = "<group>"; };
+		187BBDB31B837AB300658F04 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		187BBDB41B837AB300658F04 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		187BBDB51B837AB300658F04 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		187BBDB61B837AB300658F04 /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
+		187BBDB71B837AB300658F04 /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~iphone.png"; sourceTree = "<group>"; };
+		187BBDB81B837AB300658F04 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		187BBDC21B837B7900658F04 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		187BBDC41B837CF200658F04 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IrisIWatch/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		18EA2E051B81D1FE00C740E0 /* AccTransactionCreditRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccTransactionCreditRow.h; sourceTree = "<group>"; };
+		18EA2E061B81D21A00C740E0 /* AccTransactionCreditRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccTransactionCreditRow.m; sourceTree = "<group>"; };
+		18EA2E0C1B81F5F800C740E0 /* SBJSON */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SBJSON; sourceTree = "<group>"; };
+		18EA2E0F1B81FC8000C740E0 /* SBJson4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson4.h; path = SBJSON/SBJson4.h; sourceTree = "<group>"; };
+		18EA2E101B81FC8000C740E0 /* SBJson4Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson4Parser.h; path = SBJSON/SBJson4Parser.h; sourceTree = "<group>"; };
+		18EA2E111B81FC8000C740E0 /* SBJson4Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJson4Parser.m; path = SBJSON/SBJson4Parser.m; sourceTree = "<group>"; };
+		18EA2E121B81FC8000C740E0 /* SBJson4StreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamParser.h; path = SBJSON/SBJson4StreamParser.h; sourceTree = "<group>"; };
+		18EA2E131B81FC8000C740E0 /* SBJson4StreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamParser.m; path = SBJSON/SBJson4StreamParser.m; sourceTree = "<group>"; };
+		18EA2E141B81FC8000C740E0 /* SBJson4StreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamParserState.h; path = SBJSON/SBJson4StreamParserState.h; sourceTree = "<group>"; };
+		18EA2E151B81FC8000C740E0 /* SBJson4StreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamParserState.m; path = SBJSON/SBJson4StreamParserState.m; sourceTree = "<group>"; };
+		18EA2E161B81FC8000C740E0 /* SBJson4StreamTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamTokeniser.h; path = SBJSON/SBJson4StreamTokeniser.h; sourceTree = "<group>"; };
+		18EA2E171B81FC8000C740E0 /* SBJson4StreamTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamTokeniser.m; path = SBJSON/SBJson4StreamTokeniser.m; sourceTree = "<group>"; };
+		18EA2E181B81FC8000C740E0 /* SBJson4StreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamWriter.h; path = SBJSON/SBJson4StreamWriter.h; sourceTree = "<group>"; };
+		18EA2E191B81FC8000C740E0 /* SBJson4StreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamWriter.m; path = SBJSON/SBJson4StreamWriter.m; sourceTree = "<group>"; };
+		18EA2E1A1B81FC8000C740E0 /* SBJson4StreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamWriterState.h; path = SBJSON/SBJson4StreamWriterState.h; sourceTree = "<group>"; };
+		18EA2E1B1B81FC8000C740E0 /* SBJson4StreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamWriterState.m; path = SBJSON/SBJson4StreamWriterState.m; sourceTree = "<group>"; };
+		18EA2E1C1B81FC8000C740E0 /* SBJson4Writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson4Writer.h; path = SBJSON/SBJson4Writer.h; sourceTree = "<group>"; };
+		18EA2E1D1B81FC8000C740E0 /* SBJson4Writer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJson4Writer.m; path = SBJSON/SBJson4Writer.m; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* IrisIWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrisIWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		308D052E1370CCF300D202BF /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		308D052F1370CCF300D202BF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		308D05301370CCF300D202BF /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		30C1856519D5FC0A00212699 /* icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@3x.png"; sourceTree = "<group>"; };
+		30FC414816E50CA1004E6F35 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
+		31E3279793DD4C368605DC3E /* AppleWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleWatch.h; path = "cordova-plugin-apple-watch/AppleWatch.h"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* IrisIWatch-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IrisIWatch-Prefix.pch"; sourceTree = "<group>"; };
+		3E15FFE1B05D4A2396A0AA86 /* AppleWatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppleWatch.m; path = "cordova-plugin-apple-watch/AppleWatch.m"; sourceTree = "<group>"; };
+		3FC97CE390DB48C88B3BA651 /* MMWormhole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMWormhole.h; path = "cordova-plugin-apple-watch/MMWormhole.h"; sourceTree = "<group>"; };
+		428FCF1AF1E14C0BA7BB543B /* CDVLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLogger.h; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; };
+		4EF2B078F91B42D3B532B07D /* CDVLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVLogger.m; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; };
+		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		6E20F5B880F945F5A7B0EEDF /* CDVReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVReachability.m; path = "cordova-plugin-network-information/CDVReachability.m"; sourceTree = "<group>"; };
+		736ACDC447AE4D54B3BEE595 /* CDVConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVConnection.h; path = "cordova-plugin-network-information/CDVConnection.h"; sourceTree = "<group>"; };
+		7E7966D41810823500FA85AD /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
+		7E7966D51810823500FA85AD /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
+		7E7966D91810823500FA85AD /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x.png"; sourceTree = "<group>"; };
+		7E7966DA1810823500FA85AD /* icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76.png"; sourceTree = "<group>"; };
+		7E7966DB1810823500FA85AD /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@2x.png"; sourceTree = "<group>"; };
+		7E7966DC1810823500FA85AD /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
+		7E7966DD1810823500FA85AD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* IrisIWatch-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "IrisIWatch-Info.plist"; path = "../IrisIWatch-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		9096100F38804AECAA780512 /* CDVConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVConnection.m; path = "cordova-plugin-network-information/CDVConnection.m"; sourceTree = "<group>"; };
+		BF547B4931B94560A9D2C4D0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CB43C9D8EDFC471F9A1386C2 /* Foundation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB87FDF21871DA7A0020F90C /* merges */ = {isa = PBXFileReference; lastKnownFileType = folder; name = merges; path = ../../merges; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		F77ED776E67C47FB9C75FC7C /* libmmwormhole.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libmmwormhole.a; path = "IrisIWatch/Plugins/cordova-plugin-apple-watch/libmmwormhole.a"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = IrisIWatch/config.xml; sourceTree = "<group>"; };
+		FE53F85D43D04BF78AF87E71 /* CDVReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVReachability.h; path = "cordova-plugin-network-information/CDVReachability.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		185DFDDC1B7CE64800328905 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185DFE001B7CE6D200328905 /* libmmwormhole.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */,
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
+				3A8A7520906B447D85791B59 /* SystemConfiguration.framework in Frameworks */,
+				E156216012C7450AA586F986 /* libmmwormhole.a in Frameworks */,
+				90F2A7FD5ADA4782A1D50589 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = IrisIWatch/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		185DFDE01B7CE64800328905 /* IrisIWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18668A841B8486C6002EE4D7 /* GlanceController.m */,
+				18668A851B8486C6002EE4D7 /* GlanceController.h */,
+				18668A861B8486C6002EE4D7 /* NotificationController.h */,
+				18668A871B8486C6002EE4D7 /* NotificationController.m */,
+				18EA2E0F1B81FC8000C740E0 /* SBJson4.h */,
+				18EA2E101B81FC8000C740E0 /* SBJson4Parser.h */,
+				18EA2E111B81FC8000C740E0 /* SBJson4Parser.m */,
+				18EA2E121B81FC8000C740E0 /* SBJson4StreamParser.h */,
+				18EA2E131B81FC8000C740E0 /* SBJson4StreamParser.m */,
+				18EA2E141B81FC8000C740E0 /* SBJson4StreamParserState.h */,
+				18EA2E151B81FC8000C740E0 /* SBJson4StreamParserState.m */,
+				18EA2E161B81FC8000C740E0 /* SBJson4StreamTokeniser.h */,
+				18EA2E171B81FC8000C740E0 /* SBJson4StreamTokeniser.m */,
+				18EA2E181B81FC8000C740E0 /* SBJson4StreamWriter.h */,
+				18EA2E191B81FC8000C740E0 /* SBJson4StreamWriter.m */,
+				18EA2E1A1B81FC8000C740E0 /* SBJson4StreamWriterState.h */,
+				18EA2E1B1B81FC8000C740E0 /* SBJson4StreamWriterState.m */,
+				18EA2E1C1B81FC8000C740E0 /* SBJson4Writer.h */,
+				18EA2E1D1B81FC8000C740E0 /* SBJson4Writer.m */,
+				18EA2E0C1B81F5F800C740E0 /* SBJSON */,
+				184969BA1B7DC96700303EB7 /* IrisIWatch WatchKit Extension.entitlements */,
+				185DFDE31B7CE64800328905 /* InterfaceController.h */,
+				185DFDE41B7CE64800328905 /* InterfaceController.m */,
+				185DFDE61B7CE64800328905 /* Images.xcassets */,
+				185DFDE11B7CE64800328905 /* Supporting Files */,
+				184969BB1B7DEF4B00303EB7 /* HomeInterface.h */,
+				184969BC1B7DEF6000303EB7 /* HomeInterface.m */,
+				18EA2E051B81D1FE00C740E0 /* AccTransactionCreditRow.h */,
+				18EA2E061B81D21A00C740E0 /* AccTransactionCreditRow.m */,
+				187BBDAD1B8367CF00658F04 /* AccTransactionDebitRow.m */,
+				187BBDAF1B8367E300658F04 /* AccTransactionDebitRow.h */,
+			);
+			path = "IrisIWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		185DFDE11B7CE64800328905 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				185DFDE21B7CE64800328905 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		185DFDEE1B7CE64800328905 /* IrisIWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				185DFDF11B7CE64800328905 /* Interface.storyboard */,
+				185DFDF41B7CE64800328905 /* Images.xcassets */,
+				185DFDEF1B7CE64800328905 /* Supporting Files */,
+			);
+			path = "IrisIWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		185DFDEF1B7CE64800328905 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				185DFDF01B7CE64800328905 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* IrisIWatch.app */,
+				185DFDDF1B7CE64800328905 /* IrisIWatch WatchKit Extension.appex */,
+				185DFDEA1B7CE64800328905 /* IrisIWatch WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				184969B91B7DC95300303EB7 /* IrisIWatch.entitlements */,
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF21871DA7A0020F90C /* merges */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				185DFDE01B7CE64800328905 /* IrisIWatch WatchKit Extension */,
+				185DFDEE1B7CE64800328905 /* IrisIWatch WatchKit App */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* IrisIWatch-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			path = IrisIWatch;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				187BBDC41B837CF200658F04 /* Images.xcassets */,
+				308D052D1370CCF300D202BF /* icons */,
+				308D05311370CCF300D202BF /* splash */,
+				8D1107310486CEB800E47090 /* IrisIWatch-Info.plist */,
+			);
+			name = Resources;
+			path = IrisIWatch/Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				BF547B4931B94560A9D2C4D0 /* SystemConfiguration.framework */,
+				F77ED776E67C47FB9C75FC7C /* libmmwormhole.a */,
+				CB43C9D8EDFC471F9A1386C2 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				4EF2B078F91B42D3B532B07D /* CDVLogger.m */,
+				428FCF1AF1E14C0BA7BB543B /* CDVLogger.h */,
+				9096100F38804AECAA780512 /* CDVConnection.m */,
+				6E20F5B880F945F5A7B0EEDF /* CDVReachability.m */,
+				736ACDC447AE4D54B3BEE595 /* CDVConnection.h */,
+				FE53F85D43D04BF78AF87E71 /* CDVReachability.h */,
+				3E15FFE1B05D4A2396A0AA86 /* AppleWatch.m */,
+				31E3279793DD4C368605DC3E /* AppleWatch.h */,
+				3FC97CE390DB48C88B3BA651 /* MMWormhole.h */,
+			);
+			name = Plugins;
+			path = IrisIWatch/Plugins;
+			sourceTree = SOURCE_ROOT;
+		};
+		308D052D1370CCF300D202BF /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				1854D3BB1B821BB800E761B4 /* Icon-40@3x.png */,
+				1854D3BC1B821BB800E761B4 /* Icon-Small-50.png */,
+				1854D3BD1B821BB800E761B4 /* Icon-Small-50@2x.png */,
+				1854D3BE1B821BB800E761B4 /* Icon-Small@3x.png */,
+				30C1856519D5FC0A00212699 /* icon-60@3x.png */,
+				7E7966D41810823500FA85AD /* icon-40.png */,
+				7E7966D51810823500FA85AD /* icon-40@2x.png */,
+				7E7966D91810823500FA85AD /* icon-60@2x.png */,
+				7E7966DA1810823500FA85AD /* icon-76.png */,
+				7E7966DB1810823500FA85AD /* icon-76@2x.png */,
+				7E7966DC1810823500FA85AD /* icon-small.png */,
+				7E7966DD1810823500FA85AD /* icon-small@2x.png */,
+				30FC414816E50CA1004E6F35 /* icon-72@2x.png */,
+				308D052E1370CCF300D202BF /* icon-72.png */,
+				308D052F1370CCF300D202BF /* icon.png */,
+				308D05301370CCF300D202BF /* icon@2x.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		308D05311370CCF300D202BF /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				187BBDC21B837B7900658F04 /* Default-568h@2x.png */,
+				187BBDB01B837AB300658F04 /* Default-667h.png */,
+				187BBDB11B837AB300658F04 /* Default-736h.png */,
+				187BBDB21B837AB300658F04 /* Default-Landscape-736h.png */,
+				187BBDB31B837AB300658F04 /* Default-Landscape~ipad.png */,
+				187BBDB41B837AB300658F04 /* Default-Portrait@2x~ipad.png */,
+				187BBDB51B837AB300658F04 /* Default-Portrait~ipad.png */,
+				187BBDB61B837AB300658F04 /* Default-568h@2x~iphone.png */,
+				187BBDB71B837AB300658F04 /* Default@2x~iphone.png */,
+				187BBDB81B837AB300658F04 /* Default~iphone.png */,
+				1854D3C61B821DE200E761B4 /* Default-Landscape@2x.png */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		185DFDDE1B7CE64800328905 /* IrisIWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185DFDFE1B7CE64900328905 /* Build configuration list for PBXNativeTarget "IrisIWatch WatchKit Extension" */;
+			buildPhases = (
+				185DFDDB1B7CE64800328905 /* Sources */,
+				185DFDDC1B7CE64800328905 /* Frameworks */,
+				185DFDDD1B7CE64800328905 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				185DFDED1B7CE64800328905 /* PBXTargetDependency */,
+			);
+			name = "IrisIWatch WatchKit Extension";
+			productName = "IrisIWatch WatchKit Extension";
+			productReference = 185DFDDF1B7CE64800328905 /* IrisIWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		185DFDE91B7CE64800328905 /* IrisIWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185DFDFD1B7CE64900328905 /* Build configuration list for PBXNativeTarget "IrisIWatch WatchKit App" */;
+			buildPhases = (
+				185DFDE81B7CE64800328905 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IrisIWatch WatchKit App";
+			productName = "IrisIWatch WatchKit App";
+			productReference = 185DFDEA1B7CE64800328905 /* IrisIWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		1D6058900D05DD3D006BFB54 /* IrisIWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "IrisIWatch" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				185DFDFF1B7CE64900328905 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+				185DFDF71B7CE64800328905 /* PBXTargetDependency */,
+			);
+			name = IrisIWatch;
+			productName = IrisIWatch;
+			productReference = 1D6058910D05DD3D006BFB54 /* IrisIWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					185DFDDE1B7CE64800328905 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = W8GZUUK6L8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					185DFDE91B7CE64800328905 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = W8GZUUK6L8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "IrisIWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+				es,
+				de,
+				se,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* IrisIWatch */,
+				185DFDDE1B7CE64800328905 /* IrisIWatch WatchKit Extension */,
+				185DFDE91B7CE64800328905 /* IrisIWatch WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		185DFDDD1B7CE64800328905 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187BBDBC1B837AB300658F04 /* Default-Landscape~ipad.png in Resources */,
+				187BBDBF1B837AB300658F04 /* Default-568h@2x~iphone.png in Resources */,
+				187BBDC01B837AB300658F04 /* Default@2x~iphone.png in Resources */,
+				187BBDB91B837AB300658F04 /* Default-667h.png in Resources */,
+				18EA2E0D1B81F5F800C740E0 /* SBJSON in Resources */,
+				187BBDBA1B837AB300658F04 /* Default-736h.png in Resources */,
+				187BBDBD1B837AB300658F04 /* Default-Portrait@2x~ipad.png in Resources */,
+				187BBDBE1B837AB300658F04 /* Default-Portrait~ipad.png in Resources */,
+				185DFDE71B7CE64800328905 /* Images.xcassets in Resources */,
+				187BBDC31B837B7900658F04 /* Default-568h@2x.png in Resources */,
+				185DFDEB1B7CE64800328905 /* IrisIWatch WatchKit App.app in Resources */,
+				187BBDBB1B837AB300658F04 /* Default-Landscape-736h.png in Resources */,
+				187BBDC11B837AB300658F04 /* Default~iphone.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185DFDE81B7CE64800328905 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185DFDF31B7CE64800328905 /* Interface.storyboard in Resources */,
+				185DFDF51B7CE64800328905 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7966E41810823500FA85AD /* icon-76.png in Resources */,
+				1854D3C01B821BB800E761B4 /* Icon-Small-50.png in Resources */,
+				7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */,
+				308D05371370CCF300D202BF /* icon-72.png in Resources */,
+				1854D3BF1B821BB800E761B4 /* Icon-40@3x.png in Resources */,
+				308D05381370CCF300D202BF /* icon.png in Resources */,
+				308D05391370CCF300D202BF /* icon@2x.png in Resources */,
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				1854D3C11B821BB800E761B4 /* Icon-Small-50@2x.png in Resources */,
+				7E7966E31810823500FA85AD /* icon-60@2x.png in Resources */,
+				7E7966E61810823500FA85AD /* icon-small.png in Resources */,
+				7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */,
+				1854D3C21B821BB800E761B4 /* Icon-Small@3x.png in Resources */,
+				7E7966DE1810823500FA85AD /* icon-40.png in Resources */,
+				1854D3D01B821DE200E761B4 /* Default-Landscape@2x.png in Resources */,
+				187BBDC51B837CF200658F04 /* Images.xcassets in Resources */,
+				30C1856619D5FC0A00212699 /* icon-60@3x.png in Resources */,
+				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
+				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		185DFDDB1B7CE64800328905 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EA2E1F1B81FC8000C740E0 /* SBJson4StreamParser.m in Sources */,
+				18EA2E231B81FC8000C740E0 /* SBJson4StreamWriterState.m in Sources */,
+				184969BD1B7DEF6000303EB7 /* HomeInterface.m in Sources */,
+				18EA2E211B81FC8000C740E0 /* SBJson4StreamTokeniser.m in Sources */,
+				18EA2E241B81FC8000C740E0 /* SBJson4Writer.m in Sources */,
+				18EA2E201B81FC8000C740E0 /* SBJson4StreamParserState.m in Sources */,
+				18EA2E221B81FC8000C740E0 /* SBJson4StreamWriter.m in Sources */,
+				18EA2E071B81D21A00C740E0 /* AccTransactionCreditRow.m in Sources */,
+				18EA2E1E1B81FC8000C740E0 /* SBJson4Parser.m in Sources */,
+				185DFDE51B7CE64800328905 /* InterfaceController.m in Sources */,
+				18668A891B8486C6002EE4D7 /* NotificationController.m in Sources */,
+				187BBDAE1B8367CF00658F04 /* AccTransactionDebitRow.m in Sources */,
+				18668A881B8486C6002EE4D7 /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				A3421141DA5044879DBC94AC /* CDVLogger.m in Sources */,
+				76FB38D0D7F94451A092AB33 /* CDVConnection.m in Sources */,
+				19D0F251D77B47A69B1C3CA0 /* CDVReachability.m in Sources */,
+				BB5C533201C54839A6DF6F7B /* AppleWatch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		185DFDED1B7CE64800328905 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 185DFDE91B7CE64800328905 /* IrisIWatch WatchKit App */;
+			targetProxy = 185DFDEC1B7CE64800328905 /* PBXContainerItemProxy */;
+		};
+		185DFDF71B7CE64800328905 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 185DFDDE1B7CE64800328905 /* IrisIWatch WatchKit Extension */;
+			targetProxy = 185DFDF61B7CE64800328905 /* PBXContainerItemProxy */;
+		};
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		185DFDF11B7CE64800328905 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185DFDF21B7CE64800328905 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		185DFDF91B7CE64900328905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "IrisIWatch WatchKit Extension/IrisIWatch WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "IrisIWatch WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IrisIWatch/Plugins/cordova-plugin-apple-watch",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		185DFDFA1B7CE64900328905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "IrisIWatch WatchKit Extension/IrisIWatch WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "IrisIWatch WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IrisIWatch/Plugins/cordova-plugin-apple-watch",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		185DFDFB1B7CE64900328905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = IrisIWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "IrisIWatch WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		185DFDFC1B7CE64900328905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = IrisIWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "IrisIWatch WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = IrisIWatch/IrisIWatch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IrisIWatch/IrisIWatch-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "IrisIWatch/IrisIWatch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/IrisIWatch/Plugins/cordova-plugin-apple-watch\"",
+				);
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					CoreFoundation,
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+					"-ObjC",
+				);
+				PRODUCT_NAME = IrisIWatch;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = IrisIWatch/IrisIWatch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IrisIWatch/IrisIWatch-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "IrisIWatch/IrisIWatch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/IrisIWatch/Plugins/cordova-plugin-apple-watch\"",
+				);
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					CoreFoundation,
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+					"-ObjC",
+				);
+				PRODUCT_NAME = IrisIWatch;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					CoreFoundation,
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					CoreFoundation,
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		185DFDFD1B7CE64900328905 /* Build configuration list for PBXNativeTarget "IrisIWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185DFDFB1B7CE64900328905 /* Debug */,
+				185DFDFC1B7CE64900328905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185DFDFE1B7CE64900328905 /* Build configuration list for PBXNativeTarget "IrisIWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185DFDF91B7CE64900328905 /* Debug */,
+				185DFDFA1B7CE64900328905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "IrisIWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "IrisIWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
