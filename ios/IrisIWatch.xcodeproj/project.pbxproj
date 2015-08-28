@@ -69,6 +69,16 @@
 		90F2A7FD5ADA4782A1D50589 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB43C9D8EDFC471F9A1386C2 /* Foundation.framework */; };
 		A3421141DA5044879DBC94AC /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF2B078F91B42D3B532B07D /* CDVLogger.m */; };
 		BB5C533201C54839A6DF6F7B /* AppleWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E15FFE1B05D4A2396A0AA86 /* AppleWatch.m */; };
+		DC97315F1B90197C00510545 /* CustomCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9731581B90197C00510545 /* CustomCamera.m */; };
+		DC9731601B90197C00510545 /* CustomCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC97315A1B90197C00510545 /* CustomCameraViewController.m */; };
+		DC9731611B90197C00510545 /* OverlayBack.m in Sources */ = {isa = PBXBuildFile; fileRef = DC97315C1B90197C00510545 /* OverlayBack.m */; };
+		DC9731621B90197C00510545 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC97315E1B90197C00510545 /* OverlayView.m */; };
+		DC9731651B901A6B00510545 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9731641B901A6B00510545 /* CDVDevice.m */; };
+		DC9731681B901B0E00510545 /* CameraOverlayPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9731671B901B0E00510545 /* CameraOverlayPlugin.m */; };
+		DC97316F1B901B8E00510545 /* CDVJpegHeaderWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC97316E1B901B8E00510545 /* CDVJpegHeaderWriter.m */; };
+		DC9731731B901C3300510545 /* ChangeOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9731721B901C3300510545 /* ChangeOrientation.m */; };
+		DC9731761B901C4200510545 /* YoikScreenOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9731751B901C4200510545 /* YoikScreenOrientation.m */; };
+		DC9731791B901C5100510545 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9731781B901C5100510545 /* CDVSplashScreen.m */; };
 		E156216012C7450AA586F986 /* libmmwormhole.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F77ED776E67C47FB9C75FC7C /* libmmwormhole.a */; };
 /* End PBXBuildFile section */
 
@@ -207,6 +217,27 @@
 		9096100F38804AECAA780512 /* CDVConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVConnection.m; path = "cordova-plugin-network-information/CDVConnection.m"; sourceTree = "<group>"; };
 		BF547B4931B94560A9D2C4D0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CB43C9D8EDFC471F9A1386C2 /* Foundation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC9731571B90197C00510545 /* CustomCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCamera.h; sourceTree = "<group>"; };
+		DC9731581B90197C00510545 /* CustomCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCamera.m; sourceTree = "<group>"; };
+		DC9731591B90197C00510545 /* CustomCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCameraViewController.h; sourceTree = "<group>"; };
+		DC97315A1B90197C00510545 /* CustomCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCameraViewController.m; sourceTree = "<group>"; };
+		DC97315B1B90197C00510545 /* OverlayBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayBack.h; sourceTree = "<group>"; };
+		DC97315C1B90197C00510545 /* OverlayBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayBack.m; sourceTree = "<group>"; };
+		DC97315D1B90197C00510545 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		DC97315E1B90197C00510545 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		DC9731631B901A6A00510545 /* CDVDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
+		DC9731641B901A6B00510545 /* CDVDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
+		DC9731661B901B0E00510545 /* CameraOverlayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraOverlayPlugin.h; sourceTree = "<group>"; };
+		DC9731671B901B0E00510545 /* CameraOverlayPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraOverlayPlugin.m; sourceTree = "<group>"; };
+		DC97316C1B901B8E00510545 /* CDVExif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVExif.h; path = org.apache.cordova.camera/CDVExif.h; sourceTree = "<group>"; };
+		DC97316D1B901B8E00510545 /* CDVJpegHeaderWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVJpegHeaderWriter.h; path = org.apache.cordova.camera/CDVJpegHeaderWriter.h; sourceTree = "<group>"; };
+		DC97316E1B901B8E00510545 /* CDVJpegHeaderWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVJpegHeaderWriter.m; path = org.apache.cordova.camera/CDVJpegHeaderWriter.m; sourceTree = "<group>"; };
+		DC9731711B901C3300510545 /* ChangeOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeOrientation.h; sourceTree = "<group>"; };
+		DC9731721B901C3300510545 /* ChangeOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeOrientation.m; sourceTree = "<group>"; };
+		DC9731741B901C4200510545 /* YoikScreenOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YoikScreenOrientation.h; path = "cordova-plugin-screen-orientation/YoikScreenOrientation.h"; sourceTree = "<group>"; };
+		DC9731751B901C4200510545 /* YoikScreenOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YoikScreenOrientation.m; path = "cordova-plugin-screen-orientation/YoikScreenOrientation.m"; sourceTree = "<group>"; };
+		DC9731771B901C5100510545 /* CDVSplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVSplashScreen.h; path = org.apache.cordova.splashscreen/CDVSplashScreen.h; sourceTree = "<group>"; };
+		DC9731781B901C5100510545 /* CDVSplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVSplashScreen.m; path = org.apache.cordova.splashscreen/CDVSplashScreen.m; sourceTree = "<group>"; };
 		EB87FDF21871DA7A0020F90C /* merges */ = {isa = PBXFileReference; lastKnownFileType = folder; name = merges; path = ../../merges; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
@@ -244,6 +275,14 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DC9731571B90197C00510545 /* CustomCamera.h */,
+				DC9731581B90197C00510545 /* CustomCamera.m */,
+				DC9731591B90197C00510545 /* CustomCameraViewController.h */,
+				DC97315A1B90197C00510545 /* CustomCameraViewController.m */,
+				DC97315B1B90197C00510545 /* OverlayBack.h */,
+				DC97315C1B90197C00510545 /* OverlayBack.m */,
+				DC97315D1B90197C00510545 /* OverlayView.h */,
+				DC97315E1B90197C00510545 /* OverlayView.m */,
 				302D95EE14D2391D003F00A1 /* MainViewController.h */,
 				302D95EF14D2391D003F00A1 /* MainViewController.m */,
 				302D95F014D2391D003F00A1 /* MainViewController.xib */,
@@ -395,15 +434,28 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				4EF2B078F91B42D3B532B07D /* CDVLogger.m */,
-				428FCF1AF1E14C0BA7BB543B /* CDVLogger.h */,
-				9096100F38804AECAA780512 /* CDVConnection.m */,
-				6E20F5B880F945F5A7B0EEDF /* CDVReachability.m */,
-				736ACDC447AE4D54B3BEE595 /* CDVConnection.h */,
-				FE53F85D43D04BF78AF87E71 /* CDVReachability.h */,
-				3E15FFE1B05D4A2396A0AA86 /* AppleWatch.m */,
 				31E3279793DD4C368605DC3E /* AppleWatch.h */,
+				3E15FFE1B05D4A2396A0AA86 /* AppleWatch.m */,
+				DC9731661B901B0E00510545 /* CameraOverlayPlugin.h */,
+				DC9731671B901B0E00510545 /* CameraOverlayPlugin.m */,
+				736ACDC447AE4D54B3BEE595 /* CDVConnection.h */,
+				9096100F38804AECAA780512 /* CDVConnection.m */,
+				DC9731631B901A6A00510545 /* CDVDevice.h */,
+				DC9731641B901A6B00510545 /* CDVDevice.m */,
+				DC97316C1B901B8E00510545 /* CDVExif.h */,
+				DC97316D1B901B8E00510545 /* CDVJpegHeaderWriter.h */,
+				DC97316E1B901B8E00510545 /* CDVJpegHeaderWriter.m */,
+				428FCF1AF1E14C0BA7BB543B /* CDVLogger.h */,
+				4EF2B078F91B42D3B532B07D /* CDVLogger.m */,
+				FE53F85D43D04BF78AF87E71 /* CDVReachability.h */,
+				6E20F5B880F945F5A7B0EEDF /* CDVReachability.m */,
+				DC9731771B901C5100510545 /* CDVSplashScreen.h */,
+				DC9731781B901C5100510545 /* CDVSplashScreen.m */,
+				DC9731711B901C3300510545 /* ChangeOrientation.h */,
+				DC9731721B901C3300510545 /* ChangeOrientation.m */,
 				3FC97CE390DB48C88B3BA651 /* MMWormhole.h */,
+				DC9731741B901C4200510545 /* YoikScreenOrientation.h */,
+				DC9731751B901C4200510545 /* YoikScreenOrientation.m */,
 			);
 			name = Plugins;
 			path = IrisIWatch/Plugins;
@@ -690,12 +742,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				DC97316F1B901B8E00510545 /* CDVJpegHeaderWriter.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				A3421141DA5044879DBC94AC /* CDVLogger.m in Sources */,
 				76FB38D0D7F94451A092AB33 /* CDVConnection.m in Sources */,
+				DC9731611B90197C00510545 /* OverlayBack.m in Sources */,
+				DC97315F1B90197C00510545 /* CustomCamera.m in Sources */,
 				19D0F251D77B47A69B1C3CA0 /* CDVReachability.m in Sources */,
 				BB5C533201C54839A6DF6F7B /* AppleWatch.m in Sources */,
+				DC9731761B901C4200510545 /* YoikScreenOrientation.m in Sources */,
+				DC9731681B901B0E00510545 /* CameraOverlayPlugin.m in Sources */,
+				DC9731791B901C5100510545 /* CDVSplashScreen.m in Sources */,
+				DC9731601B90197C00510545 /* CustomCameraViewController.m in Sources */,
+				DC9731731B901C3300510545 /* ChangeOrientation.m in Sources */,
+				DC9731621B90197C00510545 /* OverlayView.m in Sources */,
+				DC9731651B901A6B00510545 /* CDVDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

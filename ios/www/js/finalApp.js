@@ -3419,7 +3419,9 @@
         Backbone.history.start();
         AppActivity.trigger("appStart");
         //AppActivity.trigger("accOverview");
-
+        setTimeout(function() {
+            navigator.splashscreen.hide();
+        }, 2000);
         FastClick(document.body, {});
     };
 
@@ -3433,6 +3435,9 @@
         Utils.sessionCheck.initSession();
         //Languages.getLanguages();
         AppBehaviour.initialize();
+        setTimeout(function() {
+            navigator.splashscreen.hide();
+        }, 2000);
     });
 
     App.on("before:start", function(options){
@@ -3440,11 +3445,17 @@
         Models.init();
         Utils.initPace();
         Utils.initDateTimePickerBackdrop();
+        setTimeout(function() {
+            navigator.splashscreen.hide();
+        }, 2000);
     });
 
     App.start();
     (function startMobileApp() {
         document.addEventListener("backbutton", onBackKeyDown, false);
+        setTimeout(function() {
+            navigator.splashscreen.hide();
+        }, 2000);
     })();
     function onBackKeyDown() {
        if(window.location.hash == "#login" || !dConfig.AppInState){

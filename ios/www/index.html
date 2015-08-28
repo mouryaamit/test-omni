@@ -8,6 +8,7 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <meta name="description" content="VSoft IRIS">
     <meta name="author" content="VSoft IRIS">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
 
     <!-- Cache Control-->
     <meta http-equiv="cache-control" content="max-age=0" />
@@ -18,6 +19,8 @@
     <!-- Cache Control End-->
 
     <link rel="stylesheet" type="text/css" href="css/finalStyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/check-capture/finalStyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/check-capture/font_icons.css" />
 
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
@@ -199,9 +202,17 @@
 
 
 <!-- Javascript src files -->
-<script src="cordova.js" type="text/javascript"></script>
+<!--  Hide for Android Build-->
+<script src="js/customcamera.js"></script>
+<!--    END    -->
+<!-- cordova script (this will be a 404 during development) -->
+<script type="text/javascript" src="cordova.js"></script>
 <script src="js/apple_watch_wormhole_init.js" type="text/javascript"></script>
+<script type="text/javascript" src="plugins/Base64.js"></script>
+<script type="text/javascript" src="plugins/ChangeOrientation.js"></script>
 <script src="js/brand_config.js" type="text/javascript"></script>
+<script src="js/serverConfig.js" type="text/javascript"></script>
+
 <script src="js/finalApp.js" type="text/javascript"></script>
 
 </body>
