@@ -45185,7 +45185,7 @@ var jQuery = require("./jquery");
 
             },
             renderCheckImgs: function(event){
-                if(this.ui.changeAccSelect.val() == "8744208795"){
+                //if(this.ui.changeAccSelect.val() == "8744208795"){
                     if(parseInt($(event.currentTarget).attr("data-checkno")) == 983 ){
                         this.ui.frontCheckImg.prop("src", "imgs/check/85_00.png");
                         this.ui.backCheckImg.prop("src", "imgs/check/back.png");
@@ -45206,7 +45206,7 @@ var jQuery = require("./jquery");
                         this.ui.backCheckImg.prop("src", "imgs/check/back.png");
                         this.ui.checkModal.modal("show");
                     }
-                }
+                //}
                 //this.ui.frontCheckImg.prop("src", "data:image/png;base64,"+data.checkFrontImage+"");
                 //this.ui.backCheckImg.prop("src", "data:image/png;base64,"+data.checkRareImage+"");
                 //this.ui.checkModal.modal("show");
