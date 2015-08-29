@@ -44131,7 +44131,7 @@ var jQuery = require("./jquery");
             //************************************************************************************************************************************************************
             //    -----------------------------------------
             var ach = userView.BusinessServicesACH;
-            if(!ach.ACHBatchAuthorization && !ach.ACHBatchSummary && !ach.ACHFileImport && !ach.ACHFileImportAuthorization && !ach.ACHRecipients && !ach.ACHAddNewRecipients && !ach.CreateNewBatch){
+            if(!ach.ACHBatchAuthorization && !ach.ACHBatchSummary && !ach.ACHFileImport && !ach.ACHFileImportAuthorization && !ach.ACHRecipients && !ach.ACHRecipients && !ach.CreateNewBatch){
                 $("#achTransferSideMenu").hide();
                 this.achHidden = true;
             }else {
@@ -44143,7 +44143,7 @@ var jQuery = require("./jquery");
                 (!ach.ACHFileImport)? $("#achFileImportSideItem").hide() : $("#achFileImportSideItem").show();
                 (!ach.ACHFileImportAuthorization)? $("#achFileImportAuthSideItem").hide() : $("#achFileImportAuthSideItem").show();
                 (!ach.ACHRecipients)? $("#achRecipientsSideItem").hide() : $("#achRecipientsSideItem").show();
-                (!ach.ACHAddNewRecipients)? $("#addNewAchRecipientSideItem").hide() : $("#addNewAchRecipientSideItem").show();
+                (!ach.ACHRecipients)? $("#addNewAchRecipientSideItem").hide() : $("#addNewAchRecipientSideItem").show();
                 (!ach.CreateNewBatch)? $("#createNewAchBatchSideItem").hide() : $("#createNewAchBatchSideItem").show();
             }
             //-----------
@@ -44290,7 +44290,7 @@ var jQuery = require("./jquery");
                     break;
                 case "ach-recipients" : (!ach.ACHRecipients)?Utils.logout() : "";
                     break;
-                case "add-new-ach-recipient" : (!ach.ACHAddNewRecipients)?Utils.logout() : "";
+                case "add-new-ach-recipient" : (!ach.ACHRecipients)?Utils.logout() : "";
                     break;
                 //    Wire
                 case "list-registered-beneficiary" : (!wireTransfer.ListBeneficiary)?Utils.logout() : "";
@@ -45660,7 +45660,11 @@ var jQuery = require("./jquery");
             },
 
             events:{
-                "click .download_statement":"downloadStatement"
+                "click .download_statement":"downloadStatement",
+                "click #dateRangeSubmitBut":"doFind"
+            },
+            doFind: function(){
+                $("#myElemTable").removeClass("hiddenElem")
             },
             downloadStatement: function(){
                 console.log('called')
@@ -47598,6 +47602,7 @@ var jQuery = require("./jquery");
                 "transCode" : "#transCode",
                 "expDate" : "#expDate",
                 "addenda" : "#addenda",
+                "amt" : "#amount",
 
                 "bankName" : "#bankName",
                 "stateList" : "#stateList",
@@ -47608,10 +47613,14 @@ var jQuery = require("./jquery");
                 "change #stateList" : "stateSelected",
                 "submit #routingNoForm" : "searchRoutingNo",
                 "click .selectRouteNo" : "selectRouteNo",
+                "blur #amount"                 : "updateAmt",
 
                 "change #batchList" : "batchSelected",
                 "submit #addNewAchRecipientForm" : "addNewAchRecipient",
                 "click #cancelNewAchRecipient" : "cancelNewAchRecipient"
+            },
+            updateAmt: function(event){
+                this.ui.amt.val(parseFloat(event.currentTarget.value).toFixed(2));
             },
 
             onShow: function(){
@@ -49883,6 +49892,7 @@ var jQuery = require("./jquery");
                 "dateScheduled" : "#dateScheduled",
                 "frequency" : "#frequency",
                 "expDate" : "#expDate",
+                "amt" : "#amount",
 
                 "recurFields" : "#recurringScheduleFields"
 
@@ -49894,9 +49904,13 @@ var jQuery = require("./jquery");
 
                 "change #scheduleOne"   : "scheduleOneSelected",
                 "change #scheduleRecur" : "recurringSelected",
+                "blur #amount"                 : "updateAmt",
 
                 "click #cancelWireTransfer" : "cancelWireTransfer",
                 "submit #wireTransferRequestForm" : "submitWireTransferRequest"
+            },
+            updateAmt: function(event){
+                this.ui.amt.val(parseFloat(event.currentTarget.value).toFixed(2));
             },
 
             onShow: function(){
@@ -51085,11 +51099,15 @@ var jQuery = require("./jquery");
                 "change #payScheduleOne"   : "scheduleOneSelected",
                 "change #payScheduleRecur" : "recurringSelected",
                 "keyup #remarks" : "checkRemarksLimit",
+                "blur #amt"                 : "updateAmt",
 
                 "click #cancel" : "showPendingTransfers",
                 "submit #editFundsTransferForm" : "submitEditFundsTransfer"
             },
 
+            updateAmt: function(event){
+                this.ui.amt.val(parseFloat(event.currentTarget.value).toFixed(2));
+            },
             onShow: function(){
                 this.initDateInput();
                 this.initFormValidations();
@@ -51531,9 +51549,13 @@ var jQuery = require("./jquery");
                 "change #payScheduleOne"   : "scheduleOneSelected",
                 "change #payScheduleRecur" : "recurringSelected",
                 "keydown #remarks" : "checkRemarksLimit",
+                "blur #amt"                 : "updateAmt",
 
                 "click #cancelFundsTransfer" : "clearFundsTransferForm",
                 "submit #fundsTransferForm" : "submitFundsTransfer"
+            },
+            updateAmt: function(event){
+                this.ui.amt.val(parseFloat(event.currentTarget.value).toFixed(2));
             },
 
             onShow: function(){
@@ -55594,7 +55616,32 @@ var jQuery = require("./jquery");
                 "submit #stopMultipleCheckPaymentForm" : "submitStopMultipleCheckPayment",
 
                 "submit #stopSingleACHPaymentForm" : "submitStopSingleACHPayment",
-                "submit #stopMultipleACHPaymentForm" : "submitStopMultipleACHPayment"
+                "submit #stopMultipleACHPaymentForm" : "submitStopMultipleACHPayment",
+
+                "blur #singleCheckAmount"                 : "updatesingleCheckAmount",
+                "blur #multipleCheckFromAmount"                 : "updatemultipleCheckFromAmount",
+                "blur #multipleCheckToAmount"                 : "updatemultipleCheckToAmount",
+                "blur #singleACHAmount"                 : "updatesingleACHAmount",
+                "blur #multipleACHFromAmount"                 : "updatemultipleACHFromAmount",
+                "blur #multipleACHToAmount"                 : "updatemultipleACHToAmount"
+            },
+            updatesingleCheckAmount: function(event){
+                this.ui.singleCheckAmount.val(parseFloat(event.currentTarget.value).toFixed(2));
+            },
+            updatemultipleCheckFromAmount: function(event){
+                this.ui.multipleCheckFromAmount.val(parseFloat(event.currentTarget.value).toFixed(2));
+            },
+            updatemultipleCheckToAmount: function(event){
+                this.ui.multipleCheckToAmount.val(parseFloat(event.currentTarget.value).toFixed(2));
+            },
+            updatesingleACHAmount: function(event){
+                this.ui.singleACHAmount.val(parseFloat(event.currentTarget.value).toFixed(2));
+            },
+            updatemultipleACHFromAmount: function(event){
+                this.ui.multipleACHFromAmount.val(parseFloat(event.currentTarget.value).toFixed(2));
+            },
+            updatemultipleACHToAmount: function(event){
+                this.ui.multipleACHToAmount.val(parseFloat(event.currentTarget.value).toFixed(2));
             },
 
             onShow: function(){
@@ -56915,7 +56962,7 @@ var jQuery = require("./jquery");
                 this.ui.achBatchSummaryCheck.prop("checked", achPage.ACHBatchSummary);
                 this.ui.createNewBatchCheck.prop("checked", achPage.CreateNewBatch);
                 this.ui.achRecipientsCheck.prop("checked", achPage.ACHRecipients);
-                this.ui.achAddNewRecipientsCheck.prop("checked", achPage.ACHAddNewRecipients);
+                this.ui.achAddNewRecipientsCheck.prop("checked", achPage.ACHRecipients);
                 this.ui.achBatchAuthCheck.prop("checked", achPage.ACHBatchAuthorization);
                 this.ui.achFileImportCheck.prop("checked", achPage.ACHFileImport);
                 this.ui.achImportAuthCheck.prop("checked", achPage.ACHFileImportAuthorization);

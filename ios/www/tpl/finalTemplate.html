@@ -1516,7 +1516,7 @@
 
                     </form>
 
-                    <div class="card">
+                    <div class="card hiddenElem" id="myElemTable">
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-xs-12 text-left">
@@ -1528,17 +1528,17 @@
                             <table id="statementsTable" class="table table-striped table-bordered table-condensed table-hover">
                                 <tbody>
                                 <tr>
-                                    <td class="download_statement">Statement - 5461234 - 6411</td>
+                                    <td class="download_statement">Statement - 6411</td>
                                     <td class="download_statement"><span class="icon-download12"></span></td>
                                 </tr>
                                 <tr>
-                                    <td class="download_statement">Statement - 9885774 - 2528</td>
+                                    <td class="download_statement">Statement - 2528</td>
                                     <td class="download_statement"><span class="icon-download12"></span></td>
 
                                     <!--<td><a href="static/ST_0001_001_1_2173.pdf" target="_blank"><span class="icon-download12"></span></a></td>-->
                                 </tr>
                                 <tr>
-                                    <td class="download_statement">Statement - 1051486 - 6555</td>
+                                    <td class="download_statement">Statement - 6555</td>
                                     <td class="download_statement"><span class="icon-download12"></span></td>
                                 </tr>
                                 </tbody>
@@ -2434,7 +2434,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-sm-4 col-md-3" for="singleCheckAmount"><%_ amtText %></label>
                                         <div class="col-sm-4 col-md-4">
-                                            <input id="singleCheckAmount" class="form-control" type="text" name="amount">
+                                            <input id="singleCheckAmount" class="form-control" type="number" inputmode="numeric" pattern="[0-9]*" name="amount">
                                         </div>
                                     </div>
 
@@ -2482,11 +2482,11 @@
                                     <div id="multiCheckAmount" class="form-group">
                                         <label class="control-label col-sm-4 col-md-3" for="multipleCheckFromAmount"><%_ fromText %></label>
                                         <div class="col-sm-3 col-md-4">
-                                            <input id="multipleCheckFromAmount" class="form-control amtRange" type="text" name="fromAmount">
+                                            <input id="multipleCheckFromAmount" class="form-control amtRange" type="number" inputmode="numeric" pattern="[0-9]*" name="fromAmount">
                                         </div>
                                         <label class="control-label col-sm-1 col-md-1" for="multipleCheckToAmount"><%_ toText %></label>
                                         <div class="col-sm-3 col-md-4">
-                                            <input id="multipleCheckToAmount" class="form-control amtRange" type="text" name="toAmount">
+                                            <input id="multipleCheckToAmount" class="form-control amtRange" type="number" inputmode="numeric" pattern="[0-9]*" name="toAmount">
                                         </div>
                                     </div>
 
@@ -2528,7 +2528,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-sm-4 col-md-3" for="singleACHAmount"><%_ amtText %></label>
                                         <div class="col-sm-4 col-md-4">
-                                            <input id="singleACHAmount" class="form-control" type="text" name="amount">
+                                            <input id="singleACHAmount" class="form-control" type="number" inputmode="numeric" pattern="[0-9]*" name="amount">
                                         </div>
                                     </div>
 
@@ -2563,11 +2563,11 @@
                                     <div id="multiACHAmount" class="form-group">
                                         <label class="control-label col-sm-4 col-md-3" for="multipleACHFromAmount"><%_ fromText %></label>
                                         <div class="col-sm-3 col-md-4">
-                                            <input id="multipleACHFromAmount" class="form-control amtRange" type="text" name="fromAmount">
+                                            <input id="multipleACHFromAmount" class="form-control amtRange" type="number" inputmode="numeric" pattern="[0-9]*" name="fromAmount">
                                         </div>
                                         <label class="control-label col-sm-1 col-md-1" for="multipleACHToAmount"><%_ toText %></label>
                                         <div class="col-sm-3 col-md-4">
-                                            <input id="multipleACHToAmount" class="form-control amtRange" type="text" name="toAmount">
+                                            <input id="multipleACHToAmount" class="form-control amtRange" type="number" inputmode="numeric" pattern="[0-9]*" name="toAmount">
                                         </div>
                                     </div>
 
@@ -4503,7 +4503,7 @@
                     <div class="form-group">
                         <label for="amt" class="col-sm-3 control-label"><%_ amtText %></label>
                         <div class="col-sm-5">
-                            <input class="form-control" id="amt" type="text" name="amt">
+                            <input class="form-control" id="amt" type="number" inputmode="numeric" pattern="[0-9]*" name="amt">
                         </div>
                     </div>
                     <div class="form-group">
@@ -5123,7 +5123,7 @@
                     <div id="toTransfer" class="form-group">
                         <label for="amount" class="col-sm-3 control-label"><%_ label2Text %></label>
                         <div class="col-sm-5">
-                            <input class="form-control" id="amount" type="text" name="amount">
+                            <input class="form-control" id="amount" type="number" inputmode="numeric" pattern="[0-9]*" Zname="amount">
                         </div>
                     </div>
 
@@ -5803,7 +5803,7 @@
                     <div class="form-group">
                         <label for="amount" class="col-sm-4 control-label"><%_ amtText %></label>
                         <div class="col-sm-5">
-                            <input class="form-control" id="amount" type="text" name="amount" value="<%= amount %>">
+                            <input class="form-control" id="amount" type="number" inputmode="numeric" pattern="[0-9]*" name="amount" value="<%= amount %>">
                         </div>
                     </div>
                     <div class="form-group">
@@ -6336,7 +6336,7 @@
                     <div class="form-group">
                         <label for="amount" class="col-sm-4 control-label"><%_ amtText %></label>
                         <div class="col-sm-5">
-                            <input class="form-control" id="amount" type="text" name="amount" value="<%= amount %>">
+                            <input class="form-control" id="amount" type="number" inputmode="numeric" pattern="[0-9]*" name="amount" value="<%= amount %>">
                         </div>
                     </div>
                     <div class="form-group">
